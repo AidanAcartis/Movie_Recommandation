@@ -29,17 +29,3 @@ The notebooks expect the MovieLens datasets on Google Drive:
 
 - `ml-latest-small` (610 users, 100k ratings) for development.
 - `ml-25m` (162k users, 25M ratings) for the main experiments, with the 90/10 per-user split files `4train_ratings_90.csv` and `4test_ratings_10.csv`.
-
-## Figures
-
-All figures are written to a `figures/` folder next to the notebook. The LaTeX report (`main.tex`) picks them up automatically, and falls back to a placeholder box if a figure is missing.
-
-## Running
-
-1. Mount Google Drive and set the folder paths at the top of each notebook.
-2. Run the split/plot notebook first if you need to regenerate the train/test files or the dataset plots.
-3. Run `practical4_movielens25m.ipynb` end to end for the full experiment grid, the 2D embeddings, the synthetic-user recommendations, and the polarizing-movie analysis.
-
-## Reference
-
-The LaTeX report summarizing this work is in `main.tex` (AIMS-ICML style), with the bibliography in `references.bib`.
